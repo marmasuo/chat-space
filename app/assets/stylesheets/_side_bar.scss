@@ -1,0 +1,51 @@
+.SideBar {
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+  color: #ffffff;
+  font-weight: bold;
+  .user--name {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .top--items {
+      height: 20px;
+      width: 260px;
+      display:flex;
+      justify-content: space-between;
+    }
+      .name {
+        font-size: 16px;
+        display:flex;
+        justify-content: flex-start;
+      }
+      .icons {
+        width: 60px;
+        text-decoration: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+        .a{
+        color: #ffffff;
+        }
+        .edit--icon {
+          margin-right: 5px;
+        }
+  .group--list {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 0 20px;
+  }
+    .groupDetail {
+      padding: 20px 0 40px 0;
+    }
+      .groupName {
+        font-size: 15px;
+        margin-bottom:5px;
+      }
+      .groupLast--message {
+        font-size: 11px;
+      }
+}

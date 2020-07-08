@@ -1,0 +1,32 @@
+.MainChat
+  .group--info
+    .group--info--left__side
+      .group--detail グループ名
+      .group--members Member :masa
+    = link_to "", class: "edit-btn" do
+      Edit
+  .message--list
+    .message--member
+      .message--writer masa
+      &nbsp;
+      .message-date 2020/07/07
+    .message--detail おはよう
+    .message--member
+      .message--writer masa
+      &nbsp;
+      .message-date 2020/07/07
+    .message--detail こんにちは
+    .message--member
+      .message--writer masa
+      &nbsp;
+      .message-date 2020/07/07
+    .message--detail おやすみ
+    
+  .message--form
+    %form.new_message
+      .input-box
+        %input.input-box__text{type:"text", placeholder: "type a message"}
+        %label.input-box__image
+          = icon('fas', 'image')
+          %input.input-box__image__file{type: "file"}
+      %input.submit-btn{type: "submit", value: "Send"}
