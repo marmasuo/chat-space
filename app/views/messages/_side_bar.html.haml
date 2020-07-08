@@ -2,11 +2,11 @@
   .user--name
     .top--items
       .name
-        %p masa
+        = current_user.name
       .icons
         = link_to "", class: "a" do
           = icon("fas", "edit", class: "edit--icon")
-        = link_to "", class: "a" do
+        = link_to edit_user_path(current_user), class: "a" do
           = icon("fa", "cog", class: "cog--icon")
   .group--list
     .groupDetail
