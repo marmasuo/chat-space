@@ -40,12 +40,19 @@
   }
     .groupDetail {
       padding: 20px 0 40px 0;
+      text-decoration: none;
+      color: #ffffff;
     }
+      .b {
+        text-decoration: none;
+      }
       .groupName {
         font-size: 15px;
         margin-bottom:5px;
+        color: #ffffff;
       }
       .groupLast--message {
         font-size: 11px;
+        color: #ffffff;
       }
 }
