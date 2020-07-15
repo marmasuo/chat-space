@@ -31,10 +31,11 @@
       border: 1px solid #38aef0;
       text-decoration: none;
     }
-  .message--list {
+  .message--field {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 0 0 40px;
+    overflow: scroll;
   }
     .message--member {
       display: flex;

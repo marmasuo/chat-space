@@ -9,7 +9,7 @@
           = user.name
     = link_to edit_group_path(@group.id), class: "edit-btn" do
       Edit
-  .message--list
+  .message--field
     = render @messages
   .message--form
     = form_with model: [@group, @message], html: {class: "new_message"}, local: true do |f|
