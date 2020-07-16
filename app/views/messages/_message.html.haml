@@ -1,4 +1,4 @@
-.message--list
+.message--list{data: {message: {id: message.id}}}
   .message--member
     .message--writer
       = message.user.name
@@ -8,4 +8,4 @@
   .message--detail
     - if message.content.present?
       = message.content
-    = image_tag message.image.url, class: 'input-box__image' if message.image.present?
+    = image_tag message.image.url, class: 'input-box' if message.image.present?
